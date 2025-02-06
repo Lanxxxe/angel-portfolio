@@ -7,7 +7,7 @@
     padding: min(5rem, 8%);
 }
 h1 {
-    font-size: min(2.3rem, 2rem);
+    font-size: 2rem;
     width: 100%;
     background: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
     -webkit-background-clip: text;

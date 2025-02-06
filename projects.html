@@ -10,7 +10,7 @@
 <body>
     <nav class="navbar">
         <div >
-            <p class="logo">Portfolio</p>
+            <p class="logo">Angelica</p>
         </div>
         <div>
             <ul class="nav-links">
@@ -50,37 +50,69 @@
 
         <div class="project-card" onclick="openModal('project2')">
             <div class="project-thumbnail">
-                <img src="./assets/cyber.png" alt="Project 2">
+                <img src="./assets/finance.png" alt="Project 2">
             </div>
             <div class="project-info">
                 <div class="project-title">
-                    <h3>Cybersecurity Awareness Website</h3>
+                    <h3>Personal Finance Tracker Website</h3>
                 </div>
                 <div class="project-description">
-                    <p>A website aimed at educating users about online security threats and best practices</p>
+                    <p>A web app to manage expenses, track budgets, and visualize spending habits</p>
                 </div>
                 <div class="project-tech">
-                    <p>HTML, CSS, Javascript</p>
+                    <p>React.js, Chart.js, CSS</p>
                 </div>
                 <button href="#" class="view-project">View Project</button>
             </div>
         </div>
+
+        
+
     </section>
     
     <div id="project1" class="modal" style="display: none;">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('project1')">&times;</span>
-            <h2>Project 1</h2>
-            <p>More details about Project 1...</p>
+            <div class="modal-header">
+                <h2>Cybersecurity Awareness Website</h2>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/cyber.png" alt="Cybersecurity Awareness Website">
+                <p>
+                    The Cybersecurity Awareness Website is designed to educate users on the importance of online security. 
+                    It covers a range of topics, including common online threats like phishing, malware, and ransomware, along with best practices to stay safe online.
+                    The website offers interactive modules, infographics, and real-life case studies to make learning engaging and informative.
+                </p>
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div id="project2" class="modal" style="display: none;">
-        <div class="modal-content">
-            <span class="close-modal" onclick="closeModal('project2')">&times;</span>
-            <h2>Project 2</h2>
-            <p>More details about Project 2...</p>
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal('project2')">&times;</span>
+        <div class="modal-header">
+            <h2>Personal Finance Tracker Website</h2>
+        </div>
+        <div class="modal-body">
+            <img src="./assets/finance.png" alt="Personal Finance Tracker" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+            <p>
+                The Personal Finance Tracker helps users manage their finances by tracking daily expenses, setting budget goals, and visualizing spending patterns through interactive charts.
+                Users can categorize transactions, analyze their savings, and gain insights into their financial habits with easy-to-understand graphs and summaries.
+            </p>
+            <h3>Technologies Used:</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
         </div>
     </div>
+</div>
     
     <script src="./js/global.js"></script>
     <script src="./js/projects.js"></script>   

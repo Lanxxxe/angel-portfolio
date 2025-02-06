@@ -41,7 +41,7 @@ body {
 }
 
 .logo {
-    color: var(--var-text-white);
+    color: violet;
     font-size: 24px;
     font-weight: bold;
 }

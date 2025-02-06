@@ -22,7 +22,7 @@
     /* border: 1px solid black; */
 }
 h1 {
-    font-size: min(2rem, 1rem);
+    font-size: 1.5rem;
     margin-bottom: 20px;
     background: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
     -webkit-background-clip: text;
@@ -32,14 +32,12 @@ h1 {
     margin-bottom: 15px;
     text-align: left;
 }
-label {
-    font-weight: bold;
-}
+
 input, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #686868;
     border-radius: 5px;
     background-color: transparent;
 }
