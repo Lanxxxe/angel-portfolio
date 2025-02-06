@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    /* border: 1px solid red; */
     padding: min(5rem, 8%);
 }
 h1 {
@@ -22,15 +21,12 @@ h1 {
     margin-top: 1rem;
     width: 100%;
     padding: 0 2rem;
-    /* border: 1px solid blue; */
 }
 
 .skill {
     display: inline-block;
-    /* margin: 20px; */
     text-align: center;
     position: relative;
-    /* border: 1px solid black; */
 }
 .circle {
     width: 120px;

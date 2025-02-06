@@ -73,7 +73,7 @@ h1 {
 }
 
 .view-project:hover {
-  background-position: right center; /* change the direction of the change here */
+  background-position: right center;
   color: #fff;
   text-decoration: none;
 }
@@ -115,7 +115,6 @@ h1 {
   width: 50%;
   height: 50%;
   margin: 1rem auto;
-  /* border: 1px solid black; */
 }
 
 .modal-body > h3 {
@@ -133,7 +132,6 @@ h1 {
 }
 
 .modal-body > ul > li {
-  /* border: 1px solid black; */
   color: white;
   transition: 0.5s;
   background-size: 200% auto;

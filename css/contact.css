@@ -19,7 +19,6 @@
     border-radius: 10px;
     background-color: #dddddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* border: 1px solid black; */
 }
 h1 {
     font-size: 1.5rem;
@@ -62,7 +61,6 @@ input, textarea {
 }
 .social-icons {
     width: 100%;
-    /* border: 1px solid black; */
     margin-top: 20px;
 }
 
@@ -72,7 +70,6 @@ input, textarea {
     align-items: start;
     justify-content: center;
     gap: 1.5rem;
-    /* border: 1px solid black; */
     width: 100%;
 }
 .social-icons a {
