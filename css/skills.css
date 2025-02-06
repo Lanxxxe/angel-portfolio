@@ -1,0 +1,106 @@
+.skills-section, .soft-skills-section {
+    max-width: 100dvw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    /* border: 1px solid red; */
+    padding: min(5rem, 8%);
+}
+h1 {
+    font-size: min(2.3rem, 2rem);
+    width: 100%;
+    background: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.skill-container, .progress-bar-container {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 2rem;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0 2rem;
+    /* border: 1px solid blue; */
+}
+
+.skill {
+    display: inline-block;
+    /* margin: 20px; */
+    text-align: center;
+    position: relative;
+    /* border: 1px solid black; */
+}
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f9;
+}
+.circle img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    z-index: 2;
+}
+.progress-ring {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    transform: rotate(-90deg);
+}
+
+.progress-ring circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.progress-ring-bg {
+    stroke: #ddd;
+}
+
+.progress-ring-progress {
+    stroke: #ff6b6b;
+    stroke-dasharray: 377;
+    stroke-dashoffset: 377;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.soft-skill {
+    width: 100%;
+    text-align: left;
+}
+
+.soft-skill > p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--var-text-color);
+}
+
+.progress-bar {
+    height: 20px;
+    background: #b3b3b3;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+}
+.progress-fill {
+    height: 100%;
+    background: #ff6b6b;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+@media (max-width: 768px) { 
+    .skill-container, .progress-bar-container {
+        justify-content: center;
+    }
+
+}

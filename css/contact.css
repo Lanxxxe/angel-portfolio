@@ -1,0 +1,104 @@
+.contact-section {
+    max-width: 100%;
+    margin: auto;
+    padding: min(5rem, 8%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 20px;
+}
+
+.contact-container, .social-icons {
+    flex: 1;
+}
+
+.contact-container {
+    margin-left: min(3rem, 0);
+    width: 100%;
+    padding: min(2rem, 1rem);
+    border-radius: 10px;
+    background-color: #dddddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid black; */
+}
+h1 {
+    font-size: min(2rem, 1rem);
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+label {
+    font-weight: bold;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.submit-btn:hover {
+    background: #e63946;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+.social-icons {
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+
+.social-icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.5rem;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+.social-icons a {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+    color: #444;
+    transition: color 0.3s;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 5px 4px 6px 1px rgba(248, 153, 224, 0.564);
+}
+.social-icons a:hover {
+    box-shadow: 5px 4px 10px 1px rgba(244, 135, 216, 0.677);
+}
+
+.bi-facebook {
+    color: blue;
+}
+
+@media (max-width: 768px) { 
+    .contact-container, .social-icons {
+        flex: none;
+    }
+
+}

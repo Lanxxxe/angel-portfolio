@@ -1,0 +1,134 @@
+.about {
+    min-height: 100dvh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    z-index: -1;
+}
+
+.container {
+    max-width: 700px;
+    text-align: center;
+    padding: min(5rem, 10%);
+    /* border: 1px solid red; */
+}
+
+.about > img {
+    width: 23rem;
+    /* border: 1px solid red; */
+}
+
+.about h1 {
+    font-size: 2.5em;
+    text-align: start;
+    background: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bio {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: start;
+    margin-top: 20px;
+}
+
+.timeline-section {
+    padding: min(5rem, 10%);
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    margin-top: 20px;
+    /* width; */
+    /* border: 1px solid red; */
+}
+
+.timeline-title > h1 {
+    color: var(--var-text-color);
+    font-size: min(3rem, 1.5rem);
+    background: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+    max-width: 100%;
+    gap: 1rem;
+    padding:1rem 2rem;
+    /* border: 1px solid red; */
+}
+
+
+.timeline-item {
+    padding: 20px;
+    background: #ff6b6b;
+    color: #fff;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(255, 71, 136, 0.1);
+    /* border: 1px solid black; */
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ff6b6b;
+    border-radius: 50%;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.timeline-date {
+    font-weight: bold;
+}
+.hobbies {
+    /* border: 1px solid black; */
+    text-align: start;
+    padding: min(5rem, 10%);
+}
+.hobbies h2 {
+    font-size: 2em;
+    color: #444;
+}
+.hobbies p {
+    font-size: 1.2em;
+    background: #ffcc5c;
+    display: inline-block;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.about, .timeline-section, .hobbies {
+    opacity: 0;
+    transform: translateY(90px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px){
+    .lord-icon {
+        display: none;
+    }
+}

@@ -1,0 +1,118 @@
+.hero-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100dvh;
+    width: 100%;
+    color: var(--var-text-white);
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.hero-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0;
+    transform: translateY(-50px);
+    opacity: 0;
+    /* Animation */
+    animation: slide-down 1200ms ease-out forwards;
+}
+
+.hero-message > p:nth-child(1) {
+    font-size: min(1.5rem, 1rem);
+    margin-bottom: -5px;
+    text-align: start;
+}
+
+.hero-message > h1 {
+    font-size: min(3rem, 1.5rem);
+    text-wrap: wrap;
+    text-align: start;
+    background: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-image {
+    /* position: relative; */
+    border-radius: 7px;
+    width: 25%;
+    height: 32%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    /* Initial state */
+    transform: translateY(-50px);
+    opacity: 0;
+    /* Animation */
+    animation: slide-down 0.8s ease-out forwards;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.cta-button {background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)}
+.cta-button {
+    margin-top: 1rem;
+   padding: 0.7rem 2rem;
+   text-align: center;
+   text-decoration: none;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ .cta-button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+/* Animations */
+
+
+@media (max-width: 768px) { 
+    .hero-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: start;
+        margin-top: 2rem;
+        gap: 2rem;
+        /* border: 1px solid black; */
+    }
+    .hero-message {
+        /* border: 1px solid black; */
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-message > h1 {
+        text-align: center;
+    }
+    .hero-message p {
+        /* border: 1px solid red; */
+        text-align: center;
+    } 
+    .hero-image {
+        /* border: 1px solid black; */
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+        z-index: -1;
+    }
+}

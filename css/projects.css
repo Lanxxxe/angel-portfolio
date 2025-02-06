@@ -1,0 +1,98 @@
+.projects-section {
+    max-width: 100%;
+    margin: auto;
+    padding: min(5rem, 5%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+h1 {
+    font-size: 2.5em;
+    width: 100%;
+    background: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.project-card {
+    max-width: 28rem;
+    min-width: 18rem;
+    padding: 0.5rem 1rem;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.project-card:hover {
+    transform: scale(1.02);
+}
+.project-thumbnail img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.project-info {
+    padding: 15px;
+}
+.project-title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+.project-description {
+    font-size: 1em;
+    color: #666;
+}
+.project-tech {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #888;
+}
+.view-project {background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)}
+.view-project {
+    margin-top: 1rem;
+   padding: 0.7rem 2rem;
+   text-align: center;
+   text-decoration: none;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   border: none;
+ }
+
+ .view-project:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: left;
+}
+.close-modal {
+    cursor: pointer;
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+}

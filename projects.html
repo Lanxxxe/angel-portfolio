@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project - Portfolio</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/projects.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div >
+            <p class="logo">Portfolio</p>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li id="home" ><a href="index.html">Home</a></li>
+                <li id="about"><a href="about.html">About</a></li>
+                <li id="skills"><a href="skills.html">Skills</a></li>
+                <li id="projects"><a href="projects.html">Projects</a></li>
+                <li id="contact"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section class="projects-section">
+        <h1>My Projects</h1>
+        <div class="project-card" onclick="openModal('project1')">
+            <div class="project-thumbnail">
+                <img src="./assets/cyber.png" alt="Project 1">
+            </div>
+            <div class="project-info">
+                <div class="project-title">
+                    <h3>Cybersecurity Awareness Website</h3>
+                </div>
+                <div class="project-description">
+                    <p>A website aimed at educating users about online security threats and best practices</p>
+                </div>
+                <div class="project-tech">
+                    <p>HTML, CSS, Javascript</p>
+                </div>
+                <button href="#" class="view-project">View Project</button>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('project2')">
+            <div class="project-thumbnail">
+                <img src="./assets/cyber.png" alt="Project 2">
+            </div>
+            <div class="project-info">
+                <div class="project-title">
+                    <h3>Cybersecurity Awareness Website</h3>
+                </div>
+                <div class="project-description">
+                    <p>A website aimed at educating users about online security threats and best practices</p>
+                </div>
+                <div class="project-tech">
+                    <p>HTML, CSS, Javascript</p>
+                </div>
+                <button href="#" class="view-project">View Project</button>
+            </div>
+        </div>
+    </section>
+    
+    <div id="project1" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('project1')">&times;</span>
+            <h2>Project 1</h2>
+            <p>More details about Project 1...</p>
+        </div>
+    </div>
+    <div id="project2" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('project2')">&times;</span>
+            <h2>Project 2</h2>
+            <p>More details about Project 2...</p>
+        </div>
+    </div>
+    
+    <script src="./js/global.js"></script>
+    <script src="./js/projects.js"></script>   
+</body>
+</html>
